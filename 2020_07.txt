@@ -1,0 +1,233 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/07/30
+
+
+BUGFIX
+
+
+	win32/win_combobox.c
+		when dragged from outside
+			OLD : combo will appear
+			NEW : do nothing
+			[!] : for usability
+
+	hunyapiyo3
+		DPI 150% : window size
+			OLD : insufficient
+			NEW : fixed
+	Nekomimi Nina
+		zoom is two or larger
+			OLD : some lift will stop at turning
+			NEW : fixed
+	NonnonGame
+		64-bit version : Win10 : MIDI playback
+			OLD : stop only once
+			NEW : fixed
+	Nonnon Paint
+		Loader : Drop #1
+			OLD : internal confusion
+			NEW : fixed
+			[x] : BUGFIX @ 2020/07/10
+		Loader : Drop #2
+			OLD : crash (double-free)
+			NEW : fixed
+			[!] : memory leak prevention causes
+			[x] : BUGFIX @ 2020/07/10
+		Multi-Layer : canvas : layer name on margin
+			OLD : too small in some cases
+			NEW : fixed
+			[!] : when desktop is smaller than HD display
+
+
+NEW_FEATURE
+
+
+	neutral/bmp/color.c
+		n_bmp_sharpen_pixel() : #1
+			NEW : faster than older
+		n_bmp_sharpen_pixel() : #2
+			NEW : more accurate than older
+	neutral/bmp/filter.c
+		n_bmp_sharpen()
+			NEW : a little faster than older
+
+	win32/win_txtbox/draw.c
+		line number : right align
+			OLD : by font
+			NEW : always right align
+			[!] : forced monospace render is implemented
+
+	Nonnon Paint
+		Multi-Layer : Grabber : "Whole Grab" is ON : frame : highlight color
+			OLD : starting layer only
+			NEW : all layers
+		Resizer : "Pixelart x2" "Pixelart x3" "Cel Art x2"
+			NEW : special scalers
+			[!] : "Pixelart" for dot-based images
+			[!] : "Cel Art" for anime-like images
+		Resizer : Scroller : "Blackness"
+			NEW : blackness tweaker
+		Canvas : when window size is changed
+			NEW : more beautiful than older
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/07/20
+
+
+BUGFIX
+
+
+	win32/win/set.c
+		64-bit Version : High-DPI : 125% : n_win_set_patch()
+			OLD : too large
+			NEW : fixed
+	win32/win_radiocbutton.c
+		64-bit Version : High-DPI : 125% : n_win_radiobutton_original_draw()
+			OLD : circle is too tiny
+			NEW : fixed
+
+	All
+		64-bit Version : High-DPI : window size
+			OLD : inaccurate
+			NEW : fixed
+	Felis
+		Blacklist : name
+			OLD : Blacklist
+			NEW : Blocklist
+			[!] : for Black Lives Matter
+	LINE MASTER 2
+		name
+			OLD : LINE MASTER 2
+			OLD : LINE MASHER 2
+			[!] : for Black Lives Matter
+	Nonnon Paint
+		checker background : display
+			OLD : inaccurate
+			NEW : fixed
+		Multi-Layer : multi-selection and renaming : display a name
+			OLD : inaccurate
+			NEW : fixed
+		Multi-Layer : multi-selection and double click
+			OLD : internal confusion
+			NEW : fixed
+			[!] : currently you cannot turn visibility on/off
+		Drop2Save : when drop into a tool or layer window
+			OLD : misbehave
+			NEW : fixed
+		Resizer : Grabber : rotation #1
+			OLD : preview size is different
+			NEW : fixed
+		Resizer : Grabber : rotation #2
+			OLD : a processed image will be handled inaccurately
+			NEW : fixed
+		Multi-Layer : Resizer : Grabber
+			OLD : different between a displayed image and a finished image
+			NEW : fixed
+		Grabber : Pen : when Mix 100 : eraser
+			OLD : misbehave
+			NEW : fixed
+		Multi-Layer : Formatter
+			OLD : master / mastering
+			NEW : as_one / to save as one
+			[!] : for Black Lives Matter
+
+
+NEW_FEATURE
+
+
+	Nonnon Paint
+		Ctrl2Drag : spec
+			OLD : keep-on-clicking
+			NEW : on/off toggle
+			[!] : for preventing mis-input with a pen
+		Grid : minimum division number
+			OLD : 8
+			NEW : 16
+		Canvas : Hamburger Button
+			NEW : more margin available
+			[!] : for Grabber usability
+		Multi-Layer : Grabber : "Whole Grab" is ON
+			NEW : you can start from invisible layer
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/07/10
+
+
+BUGFIX
+
+
+	win32/win_simplemenu.c
+		Win10 : High-DPI : check
+			OLD : not adjusted
+			NEW : fixed
+			[x] : buggy : Win10 only
+
+	Nonnon Paint
+		Multi-Layer : a menu button is released when dragged from outside
+			OLD : a menu will appear
+			NEW : suppress a menu
+			[!] : for pen input
+		Multi-Layer : Up/Down
+			OLD : blend and blur scrollers still remain at old value
+			NEW : fixed
+		Multi-Layer : loader
+			OLD : memory leak
+			NEW : fixed
+		Multi-Layer : Layer Window : middle/menu click when menu is shown
+			OLD : internal confusion
+			NEW : fixed
+		Multi-Layer : Blur : Grabber
+			OLD : not applied as display
+			NEW : fixed
+			[!] : Drop2Save is safe
+
+
+NEW_FEATURE
+
+
+	win32/win_txtbox.c
+		N_WIN_TXTBOX_OPTION_EDITBOX_LINENUM
+			NEW : LISTBOX is supported
+
+	Nonnon Paint
+		Multi-Layer : canvas
+			NEW : layer name on margin available
+		Multi-Layer : layer window
+			NEW : linenumber available
+		Multi-Layer : Whole Grab
+			NEW : underline all selected layers available
+		child windows : window : key binding
+			NEW : toggle available
+			[!] : a window will be closed when you press the same key again
+			[!] : for pen tablets
+		child windows : key binding : Esc key
+			NEW : closing available
+
+
+----------==========----------==========----------==========----------
+
