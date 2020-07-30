@@ -25,6 +25,9 @@ BUGFIX
 		Multi-Layer : middle button
 			OLD : misbehave in some cases
 			NEW : fixed
+		Multi-Layer : Whole Grab : invisible layer : cursor
+			OLD : misbehave
+			NEW : fixed
 
 
 ----------==========----------==========----------==========----------
