@@ -12,6 +12,27 @@
 Change Log
 
 
+2020/07/30 : #1
+
+
+BUGFIX
+
+
+	Nonnon Paint
+		Multi-Layer : renming and lost focus
+			OLD : internal confusion
+			NEW : patched : handle as cancel
+		Multi-Layer : middle button
+			OLD : misbehave in some cases
+			NEW : fixed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2020/07/30
 
 
