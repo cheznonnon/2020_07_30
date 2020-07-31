@@ -12,6 +12,24 @@
 Change Log
 
 
+2020/07/30 : #2
+
+
+BUGFIX
+
+
+	Nonnon Paint
+		Multi-Layer : when load is failed
+			OLD : internal confusion
+			NEW : fixed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2020/07/30 : #1
 
 
