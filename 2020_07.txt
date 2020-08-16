@@ -12,6 +12,32 @@
 Change Log
 
 
+2020/08/17 : #3
+
+
+BUGFIX
+
+
+	win32/win_iconbutton.c
+		WinXP : Visual Style is ON
+			OLD : icons are not drawn
+			NEW : fixed
+			[?] : ILC_ORIGINALSIZE is handled as error on XP
+			[x] : BUGFIX @ 2020/04/20
+
+	All
+		WinXP : Visual Style is ON
+			OLD : icons are not drawn
+			NEW : fixed
+			[x] : BUGFIX @ 2020/04/20
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2020/07/30 : #2
 
 
